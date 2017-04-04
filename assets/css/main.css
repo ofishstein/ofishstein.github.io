@@ -1579,13 +1579,13 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #2b4654;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #2b4654 !important;
 			text-decoration: none;
 		}
 
@@ -1622,6 +1622,7 @@
 	h2 {
 		font-size: 1.5em;
 		line-height: 1.5em;
+		color: #2b4654;
 	}
 
 	h3 {
@@ -1792,7 +1793,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #49bf9d;
+			border-color: #2b4654;
 		}
 
 	.select-wrapper {
@@ -1902,7 +1903,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #49bf9d;
+			border-color: #2b4654;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2339,7 +2340,7 @@
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
-		min-width: 10em;
+		/*min-width: 10em;*/
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
@@ -2350,8 +2351,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #2b4654;
+			color: #2b4654 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2359,8 +2360,8 @@
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #ffffff;
+			color: #ffffff !important;
 		}
 
 		input[type="submit"].icon,
@@ -2405,8 +2406,8 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #2b4654;
+			border-color: #2b4654;
 			color: #ffffff !important;
 		}
 
@@ -2437,6 +2438,17 @@
 			border-color: #e7e7e7 !important;
 			color: #b2b2b2 !important;
 			cursor: default;
+		}
+
+		#header .button {
+			margin-top: 0.5em;
+			color: #ffffff !important;
+			border-color: #ffffff;
+		}
+
+		#header .button:hover {
+			color: rgba(255, 255, 255, 0.75) !important;
+			border-color: rgba(255, 255, 255, 0.75);
 		}
 
 /* Work Item */
@@ -2484,7 +2496,7 @@
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-size: cover;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2513,6 +2525,7 @@
 
 		#header strong, #header b {
 			color: #ffffff;
+			font-size: 1.75em;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2520,7 +2533,8 @@
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.75);
+			/*color: #ffffff;*/
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2528,8 +2542,10 @@
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 10em;
+			border: 0.20em solid #ffffff;
 		}
+
 
 /* Footer */
 
@@ -2538,11 +2554,11 @@
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: rgba(255, 255, 255, 0.7);
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+		color: rgba(255, 255, 255, 0.7);
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
@@ -2565,6 +2581,10 @@
 
 			#footer .copyright li a {
 				color: inherit;
+			}
+
+			#footer a:hover {
+				color: #ffffff !important;
 			}
 
 /* Main */
